@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="DesertGame/DesertGame.vcxproj" Id="cfdae3d1-3d33-4dbd-9e6a-30e195355abd" />
+</Solution>

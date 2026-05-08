@@ -1,0 +1,148 @@
+#meshes
+assets/base-level.obj LevelMesh
+assets/tables/table1.obj Table1Mesh
+assets/quad.obj Quad
+assets/keypad/keypad.obj KeypadMesh
+assets/door1.obj DoorMesh
+assets/lab/flask.obj Flask
+assets/lab/graduated_cylinder.obj Cylinder
+assets/lab/rack.obj Rack
+assets/exit.obj Exit
+assets/digits/cube.obj DigitCube
+assets/tables/table3.obj Table3Mesh
+assets/cup.obj CupMesh
+assets/ball.obj BallMesh
+assets/duck.obj DuckMesh
+#textures
+assets/base-level.png LevelTex
+assets/tables/table1.png Table1Tex
+assets/note.png NoteTex
+assets/keypad/keypad.png KeypadTex
+assets/lab/Lab03.png Lab03Tex
+assets/lab/Lab03_Wood.png Lab03WoodTex
+assets/digits/empty.png DigitEmpty
+assets/tables/table3.png Table3Tex
+assets/cup.png CupTex
+assets/ball.png BallTex
+assets/duck.png DuckTexture
+#objects
+GameObject Level DefaultTag
+Pos 0 0 0 Rot 0 0 0 1 Scl 1 1 1
+Mesh LevelMesh
+Texture LevelTex
+Dynamic False
+
+Keypad Keypad1 Keypad
+Pos 20.53 -7.1 -0.7 Rot 0 0 0 1 Scl 2 2 2
+Mesh KeypadMesh
+Texture KeypadTex
+Dynamic False
+
+GameObject Exit1 DefaultTag
+Pos 22.1 -3.9 -2.5 Rot 0 0 0 1 Scl 1 1 1
+Mesh Exit
+Texture LevelTex
+Dynamic False
+
+GameObject DoorLeft DefaultTag
+Pos 21.05 -3.1 -0.5 Rot 0 0 0 1 Scl 1.1 1.1 1.1
+Mesh DoorMesh
+Texture LevelTex
+Dynamic False
+
+GameObject DoorRight DefaultTag
+Pos 21.06 -4.8 -0.5 Rot -0 0 1 -4.37114e-08 Scl 1.1 1.1 1.1
+Mesh DoorMesh
+Texture LevelTex
+Dynamic False
+
+GameObject SimonSaysTable DefaultTag
+Pos -6.7 -3.9 -0.76 Rot 0.5 0.5 0.5 0.5 Scl 2.6 2.6 2.6
+Mesh Table1Mesh
+Texture Table1Tex
+Dynamic False
+
+SimonSaysCube GridMarker DefaultTag
+Pos -6.3 -3.9 -0.75 Rot 0 0 0 1 Scl 0.2 0.2 0.2
+Mesh DigitCube
+Texture DigitEmpty
+Dynamic False
+
+GameObject Table3_1 DefaultTag
+Pos 9.3 1.6 -2.2 Rot 0 0 0 1 Scl 1.3 1.3 1.3
+Mesh Table3Mesh
+Texture Table3Tex
+Dynamic False
+
+GameObject NoteGTW WordNote
+Pos 9.3 1.6 -1.545 Rot 0 0 0 1 Scl 1 0.6 1
+Mesh Quad
+Texture NoteTex
+Dynamic False
+
+GameObject Table1_1 DefaultTag
+Pos 16.5 2.2 -2 Rot 0 0 0 1 Scl 2 2 2
+Mesh Table1Mesh
+Texture Table1Tex
+Dynamic False
+
+CupObject Cup1 CupObject
+Pos 16.5 2.2 -1.41 Rot -7.54979e-08 -1 7.54979e-08 4.37114e-08 Scl 0.5 0.5 0.5
+Mesh CupMesh
+Texture CupTex
+Dynamic False
+
+CupObject Cup2 CupObject
+Pos 15.8 2.2 -1.41 Rot 7.54979e-08 1 7.54979e-08 5.69993e-15 Scl 0.5 0.5 0.5
+Mesh CupMesh
+Texture CupTex
+Dynamic False
+
+CupObject Cup3 CupObject
+Pos 17.2 2.2 -1.41 Rot 7.54979e-08 1 7.54979e-08 5.69993e-15 Scl 0.5 0.5 0.5
+Mesh CupMesh
+Texture CupTex
+Dynamic False
+
+BallObject Ball DefaultTag
+Pos 16.5 2.2 -1.59 Rot 0 0 0 1 Scl 0.4 0.4 0.4
+Mesh BallMesh
+Texture BallTex
+Dynamic False
+
+GameObject Duck1 DuckObject
+Pos -4.6 -1.8 -2.32 Rot 0 0 0.442289 0.896873 Scl 0.2 0.2 0.2
+Mesh DuckMesh
+Texture DuckTexture
+Dynamic True
+
+GameObject Duck2 DuckObject
+Pos -14.8 6.8 -2.32 Rot 0 0 0.121869 0.992546 Scl 0.2 0.2 0.2
+Mesh DuckMesh
+Texture DuckTexture
+Dynamic True
+
+GameObject Duck3 DuckObject
+Pos -11.3 -5.4 -2.32 Rot 0 0 -0.988626 0.150398 Scl 0.2 0.2 0.2
+Mesh DuckMesh
+Texture DuckTexture
+Dynamic True
+
+GameObject Duck4 DuckObject
+Pos 16.4 3.4 -2.32 Rot 0 0 0 1 Scl 0.2 0.2 0.2
+Mesh DuckMesh
+Texture DuckTexture
+Dynamic True
+
+GameObject Table1_2 DefaultTag
+Pos 13.1 -9.9 -2 Rot 0 0 0 1 Scl 2 2 2
+Mesh Table1Mesh
+Texture Table1Tex
+Dynamic False
+
+NoteObject Note1 NoteObject
+Pos 12 -10 -1.582 Rot 0 0 -0.397949 0.917408 Scl 1 0.6 1
+Mesh Quad
+Texture NoteTex
+Dynamic False
+

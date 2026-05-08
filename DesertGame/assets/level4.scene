@@ -1,0 +1,19 @@
+#meshes
+assets/terrain.obj TerrainMesh
+assets/digits/cube.obj Cube
+#textures
+assets/terrain.png TerrainTex
+assets/digits/empty.png CubeTexture
+#objects
+GameObject Terrain DefaultTag
+Pos 0 0 0 Rot 0 0 0 1 Scl 0.8 0.8 0.8
+Mesh TerrainMesh
+Texture TerrainTex
+Dynamic False
+
+GameObject Finish DefaultTag
+Pos 46.6 -69 1 Rot 0 0 0 1 Scl 5 5 1
+Mesh Cube
+Texture CubeTexture
+Dynamic False
+
