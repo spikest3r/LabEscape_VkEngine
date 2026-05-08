@@ -94,9 +94,9 @@ void OpenURL(const std::string& url) {
 #endif
 }
 
-inline void Link(const char* linkTitle, const char* link) {
+inline void Link(const char* linkTitle, const char* link, bool sameline = true) {
 	ToolUI::Text(linkTitle);
-	ToolUI::SameLine();
+	if(sameline) ToolUI::SameLine();
 	if (ToolUI::Button(link)) {
 		OpenURL(link);
 	}
@@ -111,13 +111,17 @@ void CreditsScene::MenuUICallback(Engine* engine) {
 	ToolUI::Text("Lead Developer - Oleh (spikest3r)");
 	ToolUI::Text("Rebuilt in VkEngine");
 	ToolUI::PopFont();
-	// Duck by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/6HpauUCfIAb)
+	
+	Link("Duck by Poly by Google [CC-BY]", "(https://creativecommons.org/licenses/by/3.0/)", false);
+	// ToolUI::SameLine();
+	Link("via Poly Pizza", "(https://poly.pizza/m/6HpauUCfIAb)");
+
 	ToolUI::Text("All other assets are from Unity Asset Store");
 	ToolUI::Text("Monqo Studios, kuropen, BSW_Studio, reach the enD,\nAK STUDIO ART, Animatics Studio, TridentCorp, Navarone,\nBarking Dog, Simon Serge Pasi, OccaSoftware, ALP");
 	// ToolUI::Text("\nhttps://olehsheremeta.com");
-	Link("Engine: ", "https://olehsheremeta.com/");
+	Link("Engine: ", "https://olehsheremeta.com/projects/vkengine");
 	Link("Original: ", "https://www.olehsheremeta.com/projects/lab-escape");
-	Link("Repo: ", "https://github.com/");
+	Link("Repo: ", "https://github.com/spikest3r/LabEscape_VkEngine");
 	ToolUI::PushFont(UIFonts::largeFont);
 	if (ToolUI::Button("Return")) {
 		sceneToLoad = GlobalObjects::intro;
